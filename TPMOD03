@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Pribadi</title>
+  </head>
+  <body>
+    <!-- Tag <div>: digunakan untuk mengelompokkan konten agar lebih rapi -->
+    <div>
+      <h1>Profil Pribadi</h1>
+
+      <!-- Membuat layout foto profil & video dalam tabel -->
+      <!-- <table>: menampilkan dua konten berdampingan -->
+      <table>
+        <tr>
+          <th>Foto Profil</th>
+          <th>Video Perkenalan</th>
+        </tr>
+        <tr>
+          <td>
+            <!-- Tag <img>: menampilkan foto -->
+            <img src="foto.jpg" alt="Foto Profil" width="250" />
+          </td>
+          <td>
+            <!-- Tag <video>: menampilkan video perkenalan -->
+            <video width="320" controls poster="foto.jpg">
+              <source src="foto.jpg" type="video/mp4" />
+              Browser tidak mendukung video.
+            </video>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Bagian tentang saya -->
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Saya Tasya amanda bahri. saya mahasiswa Telkom University jurusan
+        Teknologi informasi.
+      </p>
+
+      <!-- Bagian keterampilan dengan tabel -->
+      <h2>Keterampilan</h2>
+      <table border="0" cellpadding="5">
+        <tr>
+          <th>Keterampilan</th>
+          <th>Tingkat</th>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Mahir</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Menengah</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Pemula</td>
+        </tr>
+      </table>
+
+      <!-- Form untuk menghubungi -->
+      <h2>Hubungi Saya</h2>
+      <form>
+        <!-- <input>: untuk input teks pendek -->
+        Nama: <input type="text" name="nama" /><br /><br />
+        Email: <input type="email" name="email" /><br /><br />
+
+        <!-- <textarea>: untuk input teks panjang -->
+        Pesan: <br />
+        <textarea name="pesan" rows="4" cols="40"></textarea><br /><br />
+
+        <!-- <button>: untuk mengirim form -->
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <!-- Bagian link sosial media -->
+      <h3>Media Sosial:</h3>
+      <!-- Tag <a>: hyperlink ke media sosial -->
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://github.com" target="_blank">GitHub</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </body>
+</html>
